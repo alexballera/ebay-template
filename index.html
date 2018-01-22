@@ -41,6 +41,20 @@
     margin: 1rem;
     padding: 1rem;
   }
+
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .product-detail-image {
+    width: 30%;
+  }
+  .product-detail-image img {
+    width: 100%;
+  }
+  .product-detail-description {
+    width: 70%;
+  }
   .product-detail-title {
     font-size: 1.5rem;
     font-weight: bold;
@@ -94,20 +108,27 @@
       <h2 class="product-detail-title">
         Product Detail
       </h2>
-      <p>
-        <strong>Do you have financial freedom?</strong> <em class="color-cyan">The Rich Dad's Cashflow Quadrant</em> was written for you if your life has reached a financial crossroads.
-        If you want to take control of what you do to change your financial destiny, it will be useful to plan your route.
-      </p>
-      <p>
-        This book will reveal <em>why some people work less, earn more, pay less taxes and have greater financial security than others</em>.
-        The answer is simple: the secret is to know in which section of the cash flow quadrant we will work and at what specific
-        time we will do it.
-      </p>
-      <p>
-        <em  class="color-cyan">The Rich Dad's Cashflow Quadrant</em>  has been written for all those who do not wish to remain tied to job security; for people who are
-        ready to undertake transcendental changes in the world in which we live, where information is essential to conquer
-        financial freedom.
-      </p>
+      <div class="container">
+        <div class="product-detail-image">
+          <img src="https://raw.githubusercontent.com/alexballera/ebay-template/master/images/Rich-Dad-Cashflow-Quadrant-Guide-to-Financial-Freedom.jpg" alt="Rich Dad Cashflow Quadrant Guide to Financial Freedom">
+        </div>
+        <div class="product-detail-description">
+          <p>
+            <strong>Do you have financial freedom?</strong> <em class="color-cyan">The Rich Dad's Cashflow Quadrant</em> was written for you if your life has reached a financial crossroads.
+            If you want to take control of what you do to change your financial destiny, it will be useful to plan your route.
+          </p>
+          <p>
+            This book will reveal <em>why some people work less, earn more, pay less taxes and have greater financial security than others</em>.
+            The answer is simple: the secret is to know in which section of the cash flow quadrant we will work and at what specific
+            time we will do it.
+          </p>
+          <p>
+            <em  class="color-cyan">The Rich Dad's Cashflow Quadrant</em>  has been written for all those who do not wish to remain tied to job security; for people who are
+            ready to undertake transcendental changes in the world in which we live, where information is essential to conquer
+            financial freedom.
+          </p>
+        </div>
+      </div>
     </section>
     <section class="description">
         <h2 class="product-detail-title">
