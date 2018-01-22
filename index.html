@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Rich Dad's Cashflow Quadrant</title>
 </head>
 <style>
   .body {
@@ -37,6 +37,9 @@
 
   .description {
     background-color: white;
+    border: 1px solid lightgray;
+    margin: 1rem 0;
+    padding: 1rem 0;
   }
 
   .container {
@@ -55,6 +58,7 @@
     width: 100%;
   }
   .product-detail-image img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     width: 100%;
   }
   .product-detail-description {
@@ -97,20 +101,24 @@
     min-width: 150px;
   }
 
+  /* .product-key {
+    padding-top: 0;
+  }
+ */
   @media (min-width: 768px) {
-    .main {
+    /* .main {
       background-color: #f0f0f0;
-    }
+    } */
     .description {
       background-color: white;
-      margin: 1rem;
-      padding: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
     .product-detail-image {
       width: 50%;
     }
     .product-detail-description {
-      border-radius: 20px;
+      border-radius: 10px;
       padding: 1rem 3rem;
       width: 50%;
     }
@@ -118,7 +126,7 @@
       font-size: 1rem;
     }
     .product-detail-table {
-      border-radius: 20px;
+      border-radius: 10px;
       width: 49.5%;
     }
     .product-detail-table:first-child {
