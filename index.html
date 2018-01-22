@@ -14,7 +14,6 @@
     width: 100%;
   }
   .main {
-    background-color: #f0f0f0;
     width: 100%;
   }
 
@@ -23,7 +22,7 @@
   }
 
   .header {
-    background-color: #B4616D;
+    background-color: #FF1F4B;
     color: white;
     padding: 1rem;
   }
@@ -38,57 +37,133 @@
 
   .description {
     background-color: white;
-    margin: 1rem;
-    padding: 1rem;
   }
 
   .container {
     display: flex;
     flex-flow: row wrap;
   }
+  .align-item-center {
+    align-items: center;
+  }
+  .align-item-stretch {
+    align-items: stretch;
+  }
   .product-detail-image {
-    width: 30%;
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 100%;
   }
   .product-detail-image img {
     width: 100%;
   }
   .product-detail-description {
-    width: 70%;
+    background-color: #E7F6F6;
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 100%;
   }
+
+
   .product-detail-title {
+    color: #8378FF;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    text-align: center;
   }
-  .product-detail-table tr td,
-  .product-detail p {
+  .product-detail-table {
+    background-color: #E7F6F6;
+    box-sizing: border-box;
+    min-height: 150px;
+    padding: 1rem;
+    width: 100%;
+  }
+  .product-detail-table tr td {
     font-size: .9rem;
     line-height: 1.25rem;
+    padding-left: 1rem;
   }
 
   .product-detail p {
+    color: darkgray;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
     margin-bottom: 1rem;
   }
 
   .product-detail-table tr td:first-child {
     font-weight: 700;
-    min-width: 175px;
+    min-width: 150px;
   }
+
+  @media (min-width: 768px) {
+    .main {
+      background-color: #f0f0f0;
+    }
+    .description {
+      background-color: white;
+      margin: 1rem;
+      padding: 1rem;
+    }
+    .product-detail-image {
+      width: 50%;
+    }
+    .product-detail-description {
+      border-radius: 20px;
+      padding: 1rem 3rem;
+      width: 50%;
+    }
+    .product-detail p {
+      font-size: 1rem;
+    }
+    .product-detail-table {
+      border-radius: 20px;
+      width: 49.5%;
+    }
+    .product-detail-table:first-child {
+      margin-right: .5%;
+    }
+    .product-detail-table:last-child {
+      margin-left: .5%;
+    }
+  }
+  @media (min-width: 1024px) {
+    .product-detail-image {
+      width: 30%;
+    }
+    .product-detail-description {
+      width: 70%;
+    }
+    .product-detail p {
+      font-size: 1.3rem;
+    }
+  }
+
   .terminos {
-    background-color: #5D3FB8;
+    background-color: #37549E;
     color: white;
     padding: 1rem 2rem;
   }
   .terminos .product-detail-title {
+    color: #E7F6F6;
     text-align: center;
     text-transform: uppercase;
   }
   .terminos ul {
-    margin-left: 2rem;
+    color: #E7F6F6;
+    list-style-type: circle;
   }
   .terminos li {
     line-height: 1.5rem;
   }
+
+  @media (min-width: 768px) {
+    .terminos ul {
+      margin-left: 2rem;
+    }
+  }
+
 </style>
 
 <body class="body">
@@ -105,16 +180,16 @@
     </header>
 
     <section class="description product-detail">
-      <h2 class="product-detail-title">
-        Product Detail
-      </h2>
-      <div class="container">
+      <div class="container align-item-center">
         <div class="product-detail-image">
           <img src="https://raw.githubusercontent.com/alexballera/ebay-template/master/images/Rich-Dad-Cashflow-Quadrant-Guide-to-Financial-Freedom.jpg" alt="Rich Dad Cashflow Quadrant Guide to Financial Freedom">
         </div>
         <div class="product-detail-description">
+          <h2 class="product-detail-title">
+              Do you have financial freedom?
+          </h2>
           <p>
-            <strong>Do you have financial freedom?</strong> <em class="color-cyan">The Rich Dad's Cashflow Quadrant</em> was written for you if your life has reached a financial crossroads.
+            <em class="color-cyan">The Rich Dad's Cashflow Quadrant</em> was written for you if your life has reached a financial crossroads.
             If you want to take control of what you do to change your financial destiny, it will be useful to plan your route.
           </p>
           <p>
@@ -130,55 +205,52 @@
         </div>
       </div>
     </section>
-    <section class="description">
-        <h2 class="product-detail-title">
-            Product Identifiers
-        </h2>
-        <table class="product-detail-table">
-          <tr>
-            <td>ISBN</td>
-            <td>978-970-812-020-3</td>
-          </tr>
-        </table>
-    </section>
-    <section class="description">
+    <section class="description product-key">
         <h2 class="product-detail-title">
           Key Details
         </h2>
-        <table class="product-detail-table">
-          <tr>
-            <td>Author</td>
-            <td>Robert T. Kiyosaki, Sharon L. Lechter</td>
-          </tr>
-          <tr>
-            <td>Number Of Pages</td>
-            <td>423 pages</td>
-          </tr>
-          <tr>
-            <td>Edition Description</td>
-            <td>Reprint</td>
-          </tr>
-          <tr>
-            <td>Format</td>
-            <td>Paperback</td>
-          </tr>
-          <tr>
-            <td>Publication Date</td>
-            <td>2009-07</td>
-          </tr>
-          <tr>
-            <td>Language</td>
-            <td>Spanish</td>
-          </tr>
-          <tr>
-            <td>Publisher</td>
-            <td>Punto de Lectura</td>
-          </tr>
-          <tr>
-            <td>Publication Year</td>
-            <td>2009</td>
-          </tr>
-        </table>
+        <div class="container align-item-center">
+          <table class="product-detail-table">
+            <tr>
+              <td>ISBN</td>
+              <td>978-970-812-020-3</td>
+            </tr>
+            <tr>
+              <td>Author</td>
+              <td>Robert T. Kiyosaki, Sharon L. Lechter</td>
+            </tr>
+            <tr>
+              <td>Number Of Pages</td>
+              <td>423 pages</td>
+            </tr>
+            <tr>
+              <td>Edition Description</td>
+              <td>Reprint</td>
+            </tr>
+            <tr>
+              <td>Format</td>
+              <td>Paperback</td>
+            </tr>
+          </table>
+          <table class="product-detail-table">
+            <tr>
+              <td>Publication Date</td>
+              <td>2009-07</td>
+            </tr>
+            <tr>
+              <td>Language</td>
+              <td>Spanish</td>
+            </tr>
+            <tr>
+              <td>Publisher</td>
+              <td>Punto de Lectura</td>
+            </tr>
+            <tr>
+              <td>Publication Year</td>
+              <td>2009</td>
+            </tr>
+          </table>
+        </div>
     </section>
     <section class="terminos">
       <h2 class="product-detail-title">
@@ -190,23 +262,23 @@
           receipt of cleared payment.
         </li>
         <li>
-          We Only Provide Shipping to the 48 Contiguous United States
+          We Only Provide Shipping to the 48 Contiguous United States.
         </li>
         <li>
-          We are unable to ship PO Box,
+          We are unable to ship PO Box.
         </li>
         <li>
-          We do not combine shipping
+          We do not combine shipping.
         </li>
         <li>
           14 days in order to get your money back or item exchange*,
-          buyer pays return shipping
+          buyer pays return shipping.
         </li>
         <li>
-          Buyers Pay for Return Shipping Cost
+          Buyers Pay for Return Shipping Cost.
         </li>
         <li>
-          Before you report any problem to Ebay wait for our answer
+          Before you report any problem to Ebay wait for our answer.
         </li>
         <li>
           If you are unsatisfied in any way please contact me via ebay
@@ -215,7 +287,6 @@
         </li>
       </ul>
     </section>
-
   </main>
 </body>
 
